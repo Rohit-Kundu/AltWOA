@@ -188,12 +188,11 @@ def get_trans_function(shape):
         print('\n[Error!] We don\'t currently support {}-shaped transfer functions...\n'.format(shape))
         exit(1)
 
-#Altruistic Whale Optimization Algorithm (AWOA)
-def AWOA(num_agents, max_iter, train_data, train_label,
+#Whale Optimization Algorithm with Altruism (WOAA)
+def WOAA(num_agents, max_iter, train_data, train_label,
            test_data, test_label, altruism_indi = 8,
            obj_function=compute_fitness, trans_function_shape='s', save_conv_graph=True):
-
-    # Whale Optimization Algorithm
+    
     ############################### Parameters ####################################
     #                                                                             #
     #   num_agents: number of whales                                              #

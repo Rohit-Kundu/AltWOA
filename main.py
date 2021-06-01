@@ -35,7 +35,7 @@ target = correct_target(df[:,-1])
 
 train_data, test_data, train_label, test_label = train_test_split(data, target, test_size = args.test_size)
 
-solution = AWOA(num_agents=args.num_agents,
+solution = WOAA(num_agents=args.num_agents,
                 max_iter=args.max_iter,
                 train_data=train_data, train_label=train_label,
                 test_data = test_data, test_label = test_label,

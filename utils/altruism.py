@@ -72,7 +72,7 @@ def group_population(pop, acc):
     acc = np.delete(acc,[0,pos2],axis=0)
   return grouped_pop
 
-from Py_FS.filter import MI,SCC,Relief,PCC
+from Py_FS.filter import SCC,PCC
 def generate_scc(train_data,train_label):
   scc = SCC(train_data,train_label)
   return scc.scores

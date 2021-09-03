@@ -319,7 +319,7 @@ def AltWOA(num_agents, max_iter, train_data, train_label,
         whales = Altruism(altruism_whales, train_data, train_label, test_data, test_label,
                           scc_score = scc, pcc_score = pcc,
                           altruism_indi = altruism_indi,
-                          pop_size=starting_whales.shape[0], alpha = 0.5, beta = 0.5)
+                          pop_size=starting_whales.shape[0], alpha = 0.5)
 
         # update final information
         whales, fitness, accs = sort_agents(whales, obj, data)

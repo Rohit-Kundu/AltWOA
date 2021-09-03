@@ -113,11 +113,7 @@ def Altruism(new_pop, train_data, train_label, test_data, test_label, scc_score,
   grouped_pop = group_population(new_pop, fit)
 
   #Calculate the fitness of these grouped population
-  group_fit = altruism_fitness(new_pop, train_data, train_label, test_data, test_label)
-
-  #Generate SCC and PCC scores for the features
-  #scc_score = generate_scc(train_data, train_label)
-  #pcc_score = generate_pcc(train_data, train_label)
+  group_fit = altruism_fitness(grouped_pop, train_data, train_label, test_data, test_label)
 
   #Initialize the population who will finally survive the altruism operation
   altruism_pop = np.zeros(shape=(altruism_indi, new_pop.shape[1]))

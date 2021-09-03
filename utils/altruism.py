@@ -132,7 +132,7 @@ def Altruism(new_pop, train_data, train_label, test_data, test_label, scc_score,
     player1_score = alpha*scc1 + (1-alpha)*pcc1
     player2_score = alpha*scc2 + (1-alpha)*pcc2
 
-    if player1_score >= player2_score:
+    if player1_score <= player2_score:
       altruism_pop[int(count/2)] = player1
     else:
       altruism_pop[int(count/2)] = player2

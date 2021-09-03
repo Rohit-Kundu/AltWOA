@@ -219,7 +219,7 @@ def AltWOA(num_agents, max_iter, train_data, train_label,
     #                                                                             #
     ###############################################################################
     
-    short_name = 'WOA'
+    short_name = 'AltWOA'
     agent_name = 'Whale'
     train_data, train_label = np.array(train_data), np.array(train_label)
     num_features = train_data.shape[1]

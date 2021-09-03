@@ -80,7 +80,7 @@ def generate_pcc(train_data,train_label):
   pcc = PCC(train_data,train_label)
   return pcc.scores
 
-def Altruism(new_pop, train_data, train_label, test_data, test_label, scc_score, pcc_score, altruism_indi = 8, pop_size=20, alpha = 0.5, beta = 0.5):
+def Altruism(new_pop, train_data, train_label, test_data, test_label, scc_score, pcc_score, altruism_indi = 8, pop_size=20, alpha = 0.5):
   """
   new_pop: The whole population out of which half will be selected to be the population of next generation (of size 2*pop_size)
   altruism_indi: Number of individuals that will be sacrificed (altruism)
@@ -129,8 +129,8 @@ def Altruism(new_pop, train_data, train_label, test_data, test_label, scc_score,
     pcc1 = np.average(pcc_score[idx1])
     pcc2 = np.average(pcc_score[idx2])
 
-    player1_score = alpha*scc1 + beta*pcc1
-    player2_score = alpha*scc2 + beta*pcc2
+    player1_score = alpha*scc1 + (1-alpha)*pcc1
+    player2_score = alpha*scc2 + (1-alpha)*pcc2
 
     if player1_score >= player2_score:
       altruism_pop[int(count/2)] = player1

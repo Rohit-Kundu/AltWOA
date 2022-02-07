@@ -1,6 +1,6 @@
 # Altruistic Whale Optimization Algorithm (AltWOA)
 AltWOA is a novel feature selection algorithm where Altruistic properties of candidate whales are embedded to the Whale Optimization Algorithm (WOA). 
-- The overall flow chart of AltWOA and the Pseudoalgorithm of the algorithm of **Altruism** are given as follow :  ![AltWOA](https://github.com/Rohit-Kundu/AltWOA/blob/main/Pictures/AltWOA.png) ![Pseudoalgo](https://github.com/Rohit-Kundu/AltWOA/blob/main/Pictures/Screenshot%20(60)_.png)
+- The overall flow chart of AltWOA and the Pseudoalgorithm of the algorithm of **Altruism** are given as follow :  ![AltWOA](https://github.com/Rohit-Kundu/AltWOA/blob/main/Pictures/Slide1.JPG) 
 
 ## Dependencies 
     directory\AltWOA> pip install -r requirements.txt

@@ -2,9 +2,9 @@
 AltWOA is a novel feature selection algorithm where Altruistic properties of candidate whales are embedded to the Whale Optimization Algorithm (WOA). 
 
 ## Dependencies 
-    pip install -r requirements.txt
+    directory\AltWOA> pip install -r requirements.txt
 ## Arguments
-    PS E:\Ramsir\Altruism\code\AltWOA> python main.py -h
+    directory\AltWOA> python main.py -h
     usage: main.py [-h] --csv_path CSV_PATH [--test_size TEST_SIZE] [--filter_reduction FILTER_REDUCTION] [--num_agents NUM_AGENTS] [--max_iter MAX_ITER]
                    [--altruism_indi ALTRUISM_INDI] [--save_conv_graph SAVE_CONV_GRAPH]
 
@@ -23,4 +23,4 @@ AltWOA is a novel feature selection algorithm where Altruistic properties of can
       --save_conv_graph SAVE_CONV_GRAPH
                             Save the convergence plots?
 ## Code Execution
-    python main.py --csv_path "data/alon.csv"
+    directory\AltWOA> python main.py --csv_path "data/alon.csv"

@@ -14,6 +14,8 @@ def correct_target(target):
   return new_t
 
 import argparse
+
+#INPUT ARGUMENTS
 parser = argparse.ArgumentParser()
 parser.add_argument('--csv_path', type=str, required = True, help='Path to where the csv file of features')
 parser.add_argument('--test_size', type=float, default = 0.2, help='Size of test set(Absolute value, i.e., 0.2, 0.3, etc.)')
@@ -24,11 +26,12 @@ parser.add_argument('--altruism_indi', type=int, default = 10, help='Number of a
 parser.add_argument('--save_conv_graph', type=bool, default = True, help='Save the convergence plots?')
 args = parser.parse_args()
 
-
+#LOAD THE FILE
 df = np.asarray(pd.read_csv(args.csv_path,header=None))
 data = df[:,:-1]
 target = correct_target(df[:,-1])
 
+#SPLIT TRAIN-TEST DATA
 train_data, test_data, train_label, test_label = train_test_split(data, target, test_size = args.test_size)
 
 #Initial reduction using Pasi Luukka Filter method
@@ -37,7 +40,7 @@ pos = np.where(sol.ranks<args.filter_reduction)[0]
 train_reduced = train_data[:,pos]
 test_reduced = test_data[:,pos]
 
-
+#COMPUTE FEATURE SELECTION
 solution = AltWOA(num_agents=args.num_agents,
                   max_iter=args.max_iter,
                   train_data=train_reduced, train_label=train_label,

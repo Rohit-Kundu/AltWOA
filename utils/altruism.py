@@ -128,7 +128,8 @@ def Altruism(new_pop, train_data, train_label, test_data, test_label, scc_score,
     scc2 = np.average(scc_score[idx2])
     pcc1 = np.average(pcc_score[idx1])
     pcc2 = np.average(pcc_score[idx2])
-
+    
+    #Compute which candidate soln has more potential for reaching global optima (Check the description in our paper)
     player1_score = alpha*scc1 + (1-alpha)*pcc1
     player2_score = alpha*scc2 + (1-alpha)*pcc2
 

@@ -27,3 +27,14 @@ AltWOA is a novel feature selection algorithm where Altruistic properties of can
 ## Code Execution
     directory\AltWOA> python main.py --csv_path "data/name_of_file.csv"
 ## Description
+    directory\AltWOA
+            |
+            +--> utils
+            |      |
+            |      +--> AltWOA.py           # The python file of the proposed feature selection algorithm
+            |      +--> altruism.py         # The python file for performing altruism operation
+            |      +--> filter.py           # The python file for performing Pasi-Luukka operation
+            |
+            +--> main.py                    # The main function. Where initial feature selection is performed 
+                                              via the Pasi-Luukka filter. After that final feature selection is
+                                              performed via proposed AltWOA algorithm. 

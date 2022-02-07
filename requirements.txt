@@ -3,3 +3,5 @@ matplotlib==3.2.1
 numpy==1.18.3
 Py_FS==0.0.12
 scikit_learn==0.24.2
+ReliefF
+tabulate

@@ -161,6 +161,7 @@ def compute_fitness(agent, train_X, test_X, train_Y, test_Y, weight_acc=0.7, dim
     
     return fitness, acc
 
+#TRANSFER FUNCTIONS
 def sigmoid(val):
     if val < 0:
         return 1 - 1/(1 + np.exp(val))
@@ -235,9 +236,6 @@ def AltWOA(num_agents, max_iter, train_data, train_label,
 
     # initialize whales and Leader (the agent with the max fitness)
     whales = initialize(num_agents, num_features)
-
-    # for whale in whales:
-    #     print(f'Nos of features selected = {int(np.sum(whale))}')
 
     fitness = np.zeros(num_agents)
     accuracy = np.zeros(num_agents)
@@ -314,7 +312,7 @@ def AltWOA(num_agents, max_iter, train_data, train_label,
                 else:
                     whales[i,j] = 0
         
-        #Altruism
+        #Altruism Operation
         altruism_whales = np.concatenate((starting_whales,whales), axis=0)
         whales = Altruism(altruism_whales, train_data, train_label, test_data, test_label,
                           scc_score = scc, pcc_score = pcc,

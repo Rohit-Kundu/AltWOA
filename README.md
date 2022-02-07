@@ -25,5 +25,5 @@ AltWOA is a novel feature selection algorithm where Altruistic properties of can
       --save_conv_graph SAVE_CONV_GRAPH
                             Save the convergence plots?
 ## Code Execution
-    directory\AltWOA> python main.py --csv_path "data/alon.csv"
+    directory\AltWOA> python main.py --csv_path "data/name_of_file.csv"
 ## Description

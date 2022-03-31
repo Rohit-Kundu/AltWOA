@@ -40,6 +40,7 @@ AltWOA is a novel feature selection algorithm where `Altruistic` property of can
                                               performed via proposed AltWOA algorithm. 
 
 # Citation
+If you find this repository useful in any way, please consider citing our work:
 ```
 @article{kundu2022altwoa,
   title={AltWOA: Altruistic Whale Optimization Algorithm for feature selection on microarray datasets},

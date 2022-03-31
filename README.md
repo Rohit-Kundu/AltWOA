@@ -38,3 +38,15 @@ AltWOA is a novel feature selection algorithm where `Altruistic` property of can
             +--> main.py                    # The main function. Where initial feature selection is performed 
                                               via the Pasi-Luukka filter. After that final feature selection is
                                               performed via proposed AltWOA algorithm. 
+
+# Citation
+```
+@article{kundu2022altwoa,
+  title={AltWOA: Altruistic Whale Optimization Algorithm for feature selection on microarray datasets},
+  author={Kundu, Rohit and Chattopadhyay, Soham and Cuevas, Erik and Sarkar, Ram},
+  journal={Computers in Biology and Medicine},
+  pages={105349},
+  year={2022},
+  publisher={Elsevier}
+}
+```

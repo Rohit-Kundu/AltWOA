@@ -6,7 +6,7 @@ AltWOA is a novel feature selection algorithm where `Altruistic` property of can
 - Access the preprint [here](https://raw.githubusercontent.com/Rohit-Kundu/AltWOA/main/preprint/AltWOA.pdf).
 - For the PDF of the accepted version please email the first author at rohitkunduju@gmail.com or request the full text in [ResearchGate](https://www.researchgate.net/publication/359162107_AltWOA_Altruistic_Whale_Optimization_Algorithm_for_feature_selection_on_microarray_datasets). 
 
-- The overall flowchart of **AltWOA** and the Pseudoalgorithm of the algorithm of **Altruism** are given as follow :  ![AltWOA](https://github.com/Rohit-Kundu/AltWOA/blob/main/Pictures/Slide1.JPG) where Equation 13 and Equation 14 are
+- The overall flowchart of **AltWOA** and the Pseudo-algorithm of the algorithm of **Altruism** are given as follow :  ![AltWOA](https://github.com/Rohit-Kundu/AltWOA/blob/main/Pictures/Slide1.JPG) where Equation 13 and Equation 14 are
     -  ![Eq13](https://github.com/Rohit-Kundu/AltWOA/blob/main/Pictures/Screenshot%20(61)%20eq13.png) ![Eq14](https://github.com/Rohit-Kundu/AltWOA/blob/main/Pictures/Screenshot%20(62)%20eq14.png) 
 
 ## Dependencies 
